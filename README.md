@@ -3,13 +3,15 @@ Depth completion method based on ERFNet and Stacked Hourglass network and experi
 
 # Data Structure
 All train and validation files are kept in folder '/Data'  
-* --Data  
-  * --Depth   (16 bit projected point cloud (PNG file) which is provided by KITTI/depth completion Dataset, including velodyne and groundtruth)  
+'''
+--Data  
+  --Depth   
+    (16 bit projected point cloud (PNG file) which is provided by KITTI/depth completion Dataset, including velodyne and groundtruth)  
   --Rgb   
     (RGB images)  
   --depth_selection   
-      (depth selection folder which is provided by KITTI/depth completion Dataset)  
-
+    (depth selection folder which is provided by KITTI/depth completion Dataset)  
+'''
 # Train  
 --mod 'erf' (Only  ERFNet)  'hourglass' (Only hourglass)  'mod' (Both ERFNet and hourglass)  
 --data_path  The '/Data' folder path   
